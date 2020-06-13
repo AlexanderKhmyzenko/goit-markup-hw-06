@@ -70,9 +70,25 @@
           <h1 class="hero-title">
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <a href="" target="_blank" class="button-primary">Заказать услугу</a>
+          <button class="button-primary" data-modal-open>
+            <span class="button-primary-text">Заказать услугу</span>
+          </button>
         </section>
       </div>
+
+      <!-- Модальное окно -->
+      <div class="backdrop backdrop-hidden" data-modal>
+        <div class="modal">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            architecto doloribus, modi dolores quam minima labore laborum
+            tempora dicta repellat iusto, atque, nesciunt consequatur dolorem
+            facere. Soluta consequuntur voluptatem ea.
+          </p>
+          <button data-modal-close>Закрыть</button>
+        </div>
+      </div>
+
       <!-- Наши преимущества -->
       <div class="advantages">
         <div class="container">
@@ -614,8 +630,13 @@
         <div class="form">
           <b class="form-act">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
           <div class="form-input">
-            <input type="text" class="footer-input" />
-            <button type="button" class="button-secondary">Подписаться</button>
+            <form class="js-speaker-form">
+              <label for="mail" class="input-text">E-mail</label>
+              <input type="email" name="mail" id="mail" class="footer-input" />
+              <button type="submit" class="button-secondary">
+                Подписаться
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -623,5 +644,21 @@
         <p class="footer-inscription">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
