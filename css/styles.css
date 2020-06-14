@@ -325,6 +325,9 @@ a {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
+.modal-button-close:focus {
+  outline: none;
+}
 .modal .close-icon {
   display: inline-block;
   width: 30px;
@@ -413,6 +416,14 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+}
+.service-order-form-field:focus .service-order-form-label {
+  top: 0;
+  left: 0;
+  transform: translateY(-20px);
+}
+.service-order-form-input:focus .name-icon {
+  fill: #2196f3;
 }
 .service-order-form-field .textarea-label {
   left: 16px;
