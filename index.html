@@ -79,13 +79,98 @@
       <!-- Модальное окно -->
       <div class="backdrop backdrop-hidden" data-modal>
         <div class="modal">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            architecto doloribus, modi dolores quam minima labore laborum
-            tempora dicta repellat iusto, atque, nesciunt consequatur dolorem
-            facere. Soluta consequuntur voluptatem ea.
-          </p>
-          <button data-modal-close>Закрыть</button>
+          <button class="modal-button-close" data-modal-close>
+            <svg class="close-icon">
+              <use
+                href="./images/sprite.svg#form-close"
+                width="37px"
+                height="37px"
+              ></use>
+            </svg>
+          </button>
+          <form class="service-order-form js-speaker-form">
+            <b class="service-order-form-title">
+              Оставьте свои данные, мы вам перезвоним
+            </b>
+            <p class="service-order-form-field">
+              <svg class="name-icon">
+                <use
+                  href="./images/sprite.svg#form-name"
+                  width="12px"
+                  height="12px"
+                ></use>
+              </svg>
+              <label for="name" class="service-order-form-label">Имя</label>
+              <input
+                type="text"
+                name="user-name"
+                id="name"
+                class="service-order-form-input"
+              />
+            </p>
+            <p class="service-order-form-field">
+              <svg class="tel-icon">
+                <use
+                  href="./images/sprite.svg#form-tel"
+                  width="13px"
+                  height="13px"
+                ></use>
+              </svg>
+              <label for="tel" class="service-order-form-label">Телефон</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                class="service-order-form-input"
+              />
+            </p>
+            <p class="service-order-form-field">
+              <svg class="mail-icon">
+                <use
+                  href="./images/sprite.svg#form-mail"
+                  width="15px"
+                  height="12px"
+                ></use>
+              </svg>
+              <label for="mail" class="service-order-form-label">Почта</label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                class="service-order-form-input"
+              />
+            </p>
+            <p class="service-order-form-field">
+              <label
+                for="comment"
+                class="service-order-form-label textarea-label"
+                >Коментарий</label
+              >
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="5"
+                class="service-order-form-textarea"
+              ></textarea>
+            </p>
+            <p class="service-order-form-field-agreement">
+              <input
+                type="checkbox"
+                name="agreement"
+                value="Соглашаюсь с рассылкой и принимаю Условия договора"
+                id="agreement"
+                class="input-I-agree"
+              />
+              <label for="agreement" class="label-I-agree">
+                Соглашаюсь с рассылкой и принимаю
+                <a href="" class="service-order-form-link">Условия договора</a>
+              </label>
+            </p>
+            <button type="submit" class="service-order-form-submit">
+              Отправить
+            </button>
+          </form>
         </div>
       </div>
 
@@ -627,12 +712,17 @@
           </ul>
         </div>
         <!-- Форма подписки на рассылку -->
-        <div class="form">
-          <b class="form-act">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
-          <div class="form-input">
-            <form class="js-speaker-form">
-              <label for="mail" class="input-text">E-mail</label>
-              <input type="email" name="mail" id="mail" class="footer-input" />
+        <div class="footer-form">
+          <b class="footer-form-act">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
+          <div class="footer-form-input">
+            <form class="footer-form-subscribe js-speaker-form">
+              <label for="subscribe" class="footer-label">E-mail</label>
+              <input
+                type="email"
+                name="mail"
+                id="subscribe"
+                class="footer-input"
+              />
               <button type="submit" class="button-secondary">
                 Подписаться
               </button>
