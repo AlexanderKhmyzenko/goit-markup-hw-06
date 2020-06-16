@@ -93,6 +93,14 @@
               Оставьте свои данные, мы вам перезвоним
             </b>
             <p class="service-order-form-field">
+              <input
+                type="text"
+                name="user-name"
+                id="name"
+                class="service-order-form-input"
+                placeholder=" "
+              />
+              <label for="name" class="service-order-form-label">Имя</label>
               <svg class="name-icon">
                 <use
                   href="./images/sprite.svg#form-name"
@@ -100,15 +108,16 @@
                   height="12px"
                 ></use>
               </svg>
-              <label for="name" class="service-order-form-label">Имя</label>
-              <input
-                type="text"
-                name="user-name"
-                id="name"
-                class="service-order-form-input"
-              />
             </p>
             <p class="service-order-form-field">
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                class="service-order-form-input"
+                placeholder=" "
+              />
+              <label for="tel" class="service-order-form-label">Телефон</label>
               <svg class="tel-icon">
                 <use
                   href="./images/sprite.svg#form-tel"
@@ -116,15 +125,16 @@
                   height="13px"
                 ></use>
               </svg>
-              <label for="tel" class="service-order-form-label">Телефон</label>
-              <input
-                type="tel"
-                name="tel"
-                id="tel"
-                class="service-order-form-input"
-              />
             </p>
             <p class="service-order-form-field">
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                class="service-order-form-input"
+                placeholder=" "
+              />
+              <label for="mail" class="service-order-form-label">Почта</label>
               <svg class="mail-icon">
                 <use
                   href="./images/sprite.svg#form-mail"
@@ -132,27 +142,21 @@
                   height="12px"
                 ></use>
               </svg>
-              <label for="mail" class="service-order-form-label">Почта</label>
-              <input
-                type="email"
-                name="mail"
-                id="mail"
-                class="service-order-form-input"
-              />
             </p>
             <p class="service-order-form-field">
-              <label
-                for="comment"
-                class="service-order-form-label textarea-label"
-                >Коментарий</label
-              >
               <textarea
                 name="comment"
                 id="comment"
                 cols="30"
                 rows="5"
                 class="service-order-form-textarea"
+                placeholder=" "
               ></textarea>
+              <label
+                for="comment"
+                class="service-order-form-label textarea-label"
+                >Коментарий</label
+              >
             </p>
             <p class="service-order-form-field-agreement">
               <input
@@ -716,13 +720,14 @@
           <b class="footer-form-act">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
           <div class="footer-form-input">
             <form class="footer-form-subscribe js-speaker-form">
-              <label for="subscribe" class="footer-label">E-mail</label>
               <input
                 type="email"
                 name="mail"
                 id="subscribe"
                 class="footer-input"
+                placeholder=" "
               />
+              <label for="subscribe" class="footer-label">E-mail</label>
               <button type="submit" class="button-secondary">
                 Подписаться
               </button>
