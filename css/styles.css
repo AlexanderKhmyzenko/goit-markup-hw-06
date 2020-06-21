@@ -374,7 +374,6 @@ a {
 .service-order-form-field {
   position: relative;
   /* outline: 1px solid green; */
-  /* text-align: left; */
 }
 .service-order-form-field .name-icon {
   position: absolute;
@@ -419,17 +418,21 @@ a {
   box-sizing: border-box;
   border-radius: 4px;
 }
-.service-order-form-input:checked {
-  box-sizing: border-box;
+.service-order-form-input:hover {
   border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.service-order-form-input:focus {
+  outline: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 .service-order-form-label {
   position: absolute;
   top: 12px;
   bottom: 12px;
   left: 42px;
-  /* margin-left: 16px;
-  margin-bottom: 4px; */
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -446,7 +449,6 @@ a {
   left: 16px;
   transform: translateY(-20px);
 }
-
 .service-order-form-field .textarea-label {
   left: 16px;
 }
@@ -458,6 +460,16 @@ a {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.service-order-form-textarea:hover {
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.service-order-form-textarea:focus {
+  outline: 1px solid #2196f3;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -497,7 +509,6 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: var(--primary-text-color);
 }
 .label-I-agree-icon {
@@ -525,7 +536,6 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: underline;
-
   color: var(--accent-color);
 }
 .service-order-form-submit {
